@@ -2656,15 +2656,15 @@ header p {
 }
 
 #slider .fashion {
-  background-image: url("../images/slide1.jpg");
+  background-image: url("slide3.jpg");
 }
 
 #slider .furniture {
-  background-image: url("../images/slide2.jpg");
+  background-image: url("slide2.jpg");
 }
 
 #slider .art {
-  background-image: url("../images/slide3.jpg");
+  background-image: url("slide3.jpg");
 }
 
 #slider .slide-text {
@@ -3050,35 +3050,35 @@ section {
 }
 
 #page-header.shop-right {
-  background-image: url("../images/page-header.jpg");
+  background-image: url("page-header.jpg");
 }
 
 #page-header.shop-left {
-  background-image: url("../images/page-header.jpg");
+  background-image: url("page-header.jpg");
 }
 
 #page-header.shop-full {
-  background-image: url("../images/page-header.jpg");
+  background-image: url("page-header.jpg");
 }
 
 #page-header.shop-filter {
-  background-image: url("../images/page-header.jpg");
+  background-image: url("page-header.jpg");
 }
 
 #page-header.about {
-  background-image: url("../images/page-header.jpg");
+  background-image: url("page-header.jpg");
 }
 
 #page-header.blog {
-  background-image: url("../images/page-header.jpg");
+  background-image: url("page-header.jpg");
 }
 
 #page-header.contact {
-  background-image: url("../images/page-header.jpg");
+  background-image: url("page-header.jpg");
 }
 
 #page-header.login-register {
-  background-image: url("../images/page-header.jpg");
+  background-image: url("page-header.jpg");
 }
 
 /* No Image by Default */
@@ -3802,15 +3802,15 @@ a.btn-social {
 }
 
 .location-one {
-  background: url("../images/shop-miami.jpg");
+  background: url("shop-miami.jpg");
 }
 
 .location-two {
-  background: url("../images/shop-melbourne.jpg");
+  background: url("shop-melbourne.jpg");
 }
 
 .location-three {
-  background: url("../images/shop-london.jpg");
+  background: url("shop-london.jpg");
 }
 
 .shop-location.dark {
@@ -3890,7 +3890,7 @@ a.btn-social {
 }
 
 #page-not-found {
-  background: url("../images/pnf.jpg");
+  background: url("pnf.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
