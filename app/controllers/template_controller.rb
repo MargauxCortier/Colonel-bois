@@ -9,7 +9,7 @@ end
 def shop_filter
 end
 
-def faq	
+def single	
 end
 
 def showproduct
