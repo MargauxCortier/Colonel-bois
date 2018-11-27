@@ -6,4 +6,10 @@ end
 def index
 end
 
+def about
+end
+
+def shop_filter
+end
+
 end
