@@ -1,0 +1,104 @@
+@import 'variables';
+/* Tables */
+
+table {
+    width: 100%;
+    max-width: 100%;
+}
+
+table>caption+thead>tr:first-child>th, table>caption+thead>tr:first-child>td, table>colgroup+thead>tr:first-child>th, table>colgroup+thead>tr:first-child>td, table>thead:first-child>tr:first-child>th, table>thead:first-child>tr:first-child>td {
+    border-top: 0;
+}
+
+table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 1px solid $grey;
+}
+
+table>thead>tr>th, table>thead>tr>td {
+    border-bottom-width: 2px !important;
+}
+
+table>thead>tr>th, table>thead>tr>td, table>tbody>tr>th, table>tbody>tr>td, table>tfoot>tr>th, table>tr>td {
+    padding: 15px;
+    line-height: 1.5;
+    vertical-align: top;
+    border-bottom: 1px solid $light-grey;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: $bg-color !important;
+}
+
+
+/* Shoppong Cart Table */
+
+.shopping-cart thead {
+    background: $bg-color;
+}
+
+table.shopping-cart > thead > tr > th, table > thead > tr > td {
+    border-bottom-width: 0 !important;
+}
+
+.shopping-cart thead th {
+    color: $title-color;
+    padding: 10px 0;
+    font-size: 16px;
+    $font-weight: $bold;
+    line-height: 30px;
+}
+
+.shopping-cart tbody td {
+    color: $text-color;
+    padding: 10px 0;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.shopping-cart img {
+    max-width: 50px;
+}
+
+.cart-item {
+    border-bottom: 1px solid $bg-color;
+}
+
+.cart-item img {
+    max-width: 50px;
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    -ms-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+}
+
+.cart-item a img:hover {
+    opacity: 0.8;
+}
+
+.qty input[type="number"] {
+    max-width: 50px;
+    max-height: 40px;
+    padding: 10px 4px;
+    float: left;
+    outline: none !important;
+}
+
+.x-remove {
+    text-align: center;
+    color: white;
+    background: $danger;
+    border: 2px solid $danger;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+    line-height: 15px;
+    margin-right: 30px;
+    padding: 0 0 0 1px;
+    float: right;
+}
+
+/* / End Shopping Cart Table */
+
+/* / End Tables */
