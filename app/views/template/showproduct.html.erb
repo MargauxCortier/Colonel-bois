@@ -15,15 +15,15 @@
 <!-- page title -->
 <title>inCart - Responsive Shop Theme</title>
 <!-- bootstrap css -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 <!-- css -->
-<link href="css/style.css" rel="stylesheet">
-<link href="css/animate.css" rel="stylesheet">
+<!-- <link href="css/style.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet"> -->
 <!-- fonts -->
-<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href='fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/linear-icons.css">
+<link rel="stylesheet" href="css/linear-icons.css"> -->
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -60,13 +60,13 @@
                         <!-- wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="images/product-slide1.jpg" alt="">
+                                <%= image_tag('product-slide1.jpg') %>
                             </div>
                             <div class="item">
-                                <img src="images/product-slide2.jpg" alt="">
+                                <%= image_tag('product-slide2.jpg') %>
                             </div>
                             <div class="item">
-                                <img src="images/product-slide3.jpg" alt="">
+                                <%= image_tag('product-slide3.jpg') %>
                             </div>
                         </div>
                         <!-- / wrapper for slides -->
@@ -84,7 +84,6 @@
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="active"><a href="#description" role="tab" data-toggle="tab" aria-expanded="true">Description</a></li>
                         <li class=""><a href="#info" role="tab" data-toggle="tab" aria-expanded="false">Product Info</a></li>
-                        <li class=""><a href="#reviews" role="tab" data-toggle="tab" aria-expanded="false">Reviews (2)</a></li>
                     </ul>
                     <!-- / nav-tabs -->
                     <div class="tab-content">
@@ -136,70 +135,13 @@
                         </div>
                         <!-- / info-tab -->
 
-                        <div role="tabpanel" class="tab-pane animated fadeIn" id="reviews">
-                            <div class="reviews">
-                                <div class="review-author pull-left">
-                                  <img src="images/author1.jpg" alt="">
-                                </div>
-                                <div class="review-content">
-                                    <h4 class="review-title no-margin">Simply the Best!</h4>
-                                    <div class="review-stars">
-                                        <span class="product-rating">
-                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                                        </span>
-                                    </div><!-- / review-stars -->
-                                    <p>Aliquam pellentesque nisl nec ultricies scelerisque. Proin vel blandit magna. Class aptent taciti sociosqu.</p>
-                                    <cite> - Johana Doe</cite>
-                                </div><!-- / review-content -->
-
-                                <div class="space-25">&nbsp;</div>
-
-                                <div class="review-author pull-left">
-                                  <img src="images/author2.jpg" alt="">
-                                </div>
-                                <div class="review-content">
-                                    <h4 class="review-title no-margin">Good Product.</h4>
-                                    <div class="review-stars">
-                                        <span class="product-rating">
-                                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i>
-                                        </span>
-                                    </div><!-- / review-stars -->
-                                    <p>Vestibulum luctus justo justo, ac iaculis dolor luctus nec. In nec molestie mi. Praesent blandit interdum neque.</p>
-                                    <cite> - Nicole Dowe</cite>
-                                </div><!-- / review-content -->
-                            </div><!-- / reviews -->
-                        </div>
+                        
                         <!-- / reviews-tab -->
                     </div>
                     <!-- / tab-content -->
                 </div><!-- / product-content-area -->
 
-                <!-- add review -->
-                <div id="add-review" class="space-top-30">
-                    <h4>Leave a review</h4>
-                    <div class="row">
-                        <div class="col-sm-4 review-form">
-                            <input type="text" class="form-control" placeholder="*Name" required>
-                        </div>
-                        <div class="col-sm-4 review-form">
-                            <input type="email" class="form-control" placeholder="*Email" required>
-                        </div>
-                        <div class="col-sm-4 review-form">
-                            <select class="form-control">
-                                <option>5 Stars</option>
-                                <option>4 Stars</option>
-                                <option>3 Stars</option>
-                                <option>2 Stars</option>
-                                <option>1 Star</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-12 review-form">
-                            <textarea rows="7" class="form-control" placeholder="*Review" required></textarea>
-                            <button type="submit" class="btn btn-submit btn-primary-filled btn-rounded">Submit Review</button>
-                        </div>
-                    </div><!-- / row -->
-                </div>
-                <!-- / add review -->
+                
 
                 <!-- product pagination -->
                 <div class="pagination no-padding">
@@ -223,12 +165,9 @@
                         <div class="info">
                             <p><i class="lnr lnr-heart"></i><span>Category: <a href="#"> Women's</a>, <a href="#">Shirts</a></span></p>
                         </div>
-                        <div class="info">
+                        <!-- <div class="info">
                             <p><i class="lnr lnr-menu"></i><span>SKU: 3872473225</span></p>
-                        </div>
-                        <div class="info">
-                            <p><i class="lnr lnr-star"></i><span>Reviews: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i></span></p>
-                        </div>
+                        </div> -->
                     </div><!-- / project-info -->
 
                     <div class="buy-product">
@@ -260,7 +199,6 @@
                     </div>
 
                     <div class="info-buttons">
-                        <a href="#add-review" class="page-scroll btn btn-default btn-rounded"><i class="lnr lnr-star"></i><span> Leave a review</span></a>
                         <a href="contact.html" class="btn btn-primary btn-rounded"><i class="lnr lnr-phone-handset"></i><span> Contact Us</span></a>
                     </div><!-- / info-buttons -->
 
@@ -280,7 +218,7 @@
                     <span class="sale-label">SALE</span>
                     <a href="single-product.html" class="product-link"></a>
                     <!-- / product-link -->
-                    <img src="images/f-product.jpg" alt="">
+                    <%= image_tag('f-product.jpg') %>
                     <!-- / product-image -->
 
                     <!-- product-hover-tools -->
@@ -304,7 +242,7 @@
                 <div class="col-xs-6 col-md-3 product">
                     <a href="single-product.html" class="product-link"></a>
                     <!-- / product-link -->
-                    <img src="images/f-product.jpg" alt="">
+                    <%= image_tag('f-product.jpg') %>
                     <!-- / product-image -->
 
                     <!-- product-hover-tools -->
@@ -328,7 +266,7 @@
                 <div class="col-xs-6 col-md-3 product">
                     <a href="single-product.html" class="product-link"></a>
                     <!-- / product-link -->
-                    <img src="images/f-product.jpg" alt="">
+                    <%= image_tag('f-product.jpg') %>
                     <!-- / product-image -->
 
                     <!-- product-hover-tools -->
@@ -352,7 +290,7 @@
                 <div class="col-xs-6 col-md-3 product">
                     <a href="single-product.html" class="product-link"></a>
                     <!-- / product-link -->
-                    <img src="images/f-product.jpg" alt="">
+                    <%= image_tag('f-product.jpg') %>
                     <!-- / product-image -->
 
                     <!-- product-hover-tools -->
@@ -389,7 +327,7 @@
                 <div class="col-sm-6 col-md-4 widget">
                     <div class="about-widget">
                         <div class="widget-title-image">
-                            <img src="images/logo.png" alt="">
+                            <%= image_tag('logo.png') %>
                         </div>
                         <p>Praesent sed congue ipsum. Nullam tempus ornare est, non aliquet velit tincidunt elementum. Nulla at risus ut felis eleifend. Nulla non lacinia. Integer est lacus, ultricies sed feugiat id, maximus nec.</p>
                     </div><!-- / about-widget -->
@@ -481,10 +419,10 @@
                     <p>© 2016 - <strong>inCart</strong> - Responsive Shop Theme.</p>
                 </div>
                 <span class="pull-right">
-                    <img src="images/visa.png" alt="">
-                    <img src="images/mastercard.png" alt="">
-                    <img src="images/discover.png" alt="">
-                    <img src="images/paypal.png" alt="">
+                    <%= image_tag('visa.png') %>
+                    <%= image_tag('mastercard.png') %>
+                    <%= image_tag('discover.png') %>
+                    <%= image_tag('paypal.png') %>
                 </span>
         </div><!-- / container -->
     </div><!-- / footer-info -->
@@ -492,16 +430,16 @@
 <!-- / footer -->
 
 <!-- javascript -->
-<script src="js/jquery.min.js"></script>
+<!-- <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.easing.min.js"></script> -->
 
 <!-- scrolling-nav -->
-<script src="js/scrolling-nav.js"></script>
+<!-- <script src="js/scrolling-nav.js"></script> -->
 <!-- / scrolling-nav -->
 
 <!-- preloader -->
-<script src="js/preloader.js"></script>
+<!-- <script src="js/preloader.js"></script> -->
 <!-- / preloader -->
 
 <!-- / javascript -->

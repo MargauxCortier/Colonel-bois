@@ -7,5 +7,6 @@ get '/', to: 'template#index'
 get '/shop/filter', to: 'template#shop_filter'
 get '/about', to: 'template#about'
 get '/faq', to: 'template#faq'
+get '/single', to: 'template#showproduct'
 
 end

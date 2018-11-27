@@ -12,4 +12,7 @@ end
 def faq	
 end
 
+def showproduct
+end
+
 end
