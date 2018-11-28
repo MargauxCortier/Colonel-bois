@@ -6,7 +6,8 @@ class TemplateController < ApplicationController
 	def about
 	end
 
-	def shop_filter
+	def shop_full
+		@item = Item.all
 	end
 
 	def showproduct
@@ -19,9 +20,6 @@ class TemplateController < ApplicationController
 
 	def show_test
 	  @individual = Item.find(params[:id])
-	end
-
-	def showproduct
 	end
 
 end
