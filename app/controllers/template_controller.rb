@@ -22,7 +22,7 @@ class TemplateController < ApplicationController
 	end
 
 
-def showproduct
-end
+	def showproduct
+	end
 
 end

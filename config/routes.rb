@@ -9,4 +9,5 @@ Rails.application.routes.draw do
 		get '/single', to: 'template#showproduct'
 		get '/item', to: 'template#itemtest'
 		get '/show/:id', to: 'template#show_test', as: 'show'
+		get '/sooory', to: 'template#404'
 end
