@@ -9,7 +9,8 @@ class TemplateController < ApplicationController
 	def shop_filter
 	end
 
-	def single	
+	def showproduct
+		@individual = Item.find(params[:id])
 	end
 
 	def itemtest
