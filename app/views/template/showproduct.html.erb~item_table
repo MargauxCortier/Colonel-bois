@@ -37,10 +37,13 @@
 <body>
 
 <!-- preloader -->
-<div id="preloader">
+<!-- <div id="preloader">
     <div class="spinner spinner-round"></div>
-</div>
+</div> -->
 <!-- / preloader -->
+
+<!-- header -->
+<!-- / header -->
 
 <!-- content -->
 
@@ -56,7 +59,7 @@
                         <!-- wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <%= image_tag('product-slide1.jpg') %>
+                                <img src="<%= @individual.image_url %>">
                             </div>
                             <div class="item">
                                 <%= image_tag('product-slide2.jpg') %>
@@ -84,7 +87,7 @@
                     <!-- / nav-tabs -->
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane animated fadeIn active" id="description">
-                            <p>Phasellus risus nulla, tempor in est vel, sodales efficitur tellus. Nunc libero sapien, elementum vitae posuere in, efficitur non nulla. Aenean dignissim quam vel vulputate lacinia. Aliquam mauris proin ut pretium est pellentesque nisl nec ultricies scelerisque.</p>
+                            <p><%= @individual.description %></p>
                         </div>
                         <!-- / description-tab -->
 
@@ -151,12 +154,12 @@
             <!-- project sidebar area -->
             <div class="col-sm-6 col-md-5 product-sidebar">
                 <div class="product-details">
-                    <h4>Womens Shirt</h4>
-                    <p>Maecenas bibendum erat in erat maximus, vel imperdiet leo mattis. Integer vitae pellentesque massa. Fusce ac suscipit neque. Etiam justo risus, tristique id feugiat a venenatis.</p>
+                    <h4><%= @individual.title %></h4>
+                    <p><%= @individual.description %></p>
                     <h4 class="space-top-30">Product Info</h4>
                     <div class="product-info">
                         <div class="info">
-                            <p><i class="lnr lnr-tag"></i><span>Price: $59</span></p>
+                            <p><i class="lnr lnr-tag"></i><span><%= @individual.price %> €</span></p>
                         </div>
                         <div class="info">
                             <p><i class="lnr lnr-heart"></i><span>Category: <a href="#"> Women's</a>, <a href="#">Shirts</a></span></p>

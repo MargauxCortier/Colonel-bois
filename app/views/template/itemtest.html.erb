@@ -1,0 +1,14 @@
+<div>
+	<ul>
+	  <% @item.each do |item|  %>
+	    <li><%= item.title %></li>
+	    <li><%= item.description %></li>
+	    <li><%= item.price %> €</li>
+	    <li><img src="<%= item.image_url %>" style="width:20%;"></li>
+	    <a href="/single/<%= item.id %>" class="btn btn-primary">FAIS VOIR ?</a>
+	    <li><hr></li>
+	  <% end %>
+	</ul>
+</div>
+
+
