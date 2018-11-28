@@ -68,7 +68,7 @@
                     <% @item.each do |item|  %>
                     <!-- product -->
                     <div class="col-xs-6 col-md-3 product">
-                        <a href="single-product.html" class="product-link"></a>
+                        <a href="/single/<%= item.id %>" class="product-link"></a>
                         <!-- / product-link -->
                         <img src="<%= item.image_url %>" >
                         <!-- / product-image -->
