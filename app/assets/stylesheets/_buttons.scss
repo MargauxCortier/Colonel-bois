@@ -1,0 +1,1074 @@
+@import 'variables';
+
+/* Buttons */
+
+.btn {
+    font-weight: $medium;
+    font-size: 13px;
+    letter-spacing: $letter-spacing;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -ms-transition:  0.2s ease-in;
+    transition: 0.2s ease-in;
+    border-radius: 0;
+    padding: 10px 18px;
+    margin: 5px;
+}
+
+.btn span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background: transparent;
+}
+
+.btn:focus {
+    background: transparent;
+}
+
+.btn-lg {
+    font-size: 15px;
+    padding: 12px 22px;
+}
+
+.btn-sm {
+    font-size: 12px;
+    padding: 7px 15px;
+}
+
+.btn-xs {
+    font-size: 10px;
+    padding: 5px 12px;
+}
+
+.btn-sm i {
+    font-size: 10px;
+}
+
+.btn-xs i {
+    font-size: 8px;
+}
+
+.btn-social.btn-sm i {
+    font-size: 14px;
+}
+
+.btn-social.btn-xs i {
+    font-size: 12px;
+}
+
+.btn-rounded {
+    border-radius: 5px !important;
+}
+
+.btn-pill {
+    border-radius: 50px !important;
+}
+
+.btn-circle {
+    border-radius: 50% !important;
+    height: 40px;
+    width: 40px;
+    padding: 3px !Important;
+}
+
+.btn-square {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    padding: 3px !Important;
+}
+
+.btn-link {
+    color: $primary;
+}
+
+.btn-link:hover {
+    color: $primary-hover;
+    text-decoration: none;
+}
+
+.btn-link:focus {
+    color: $primary-hover;
+    text-decoration: none;
+}
+
+a.btn {
+    white-space: nowrap;
+}
+
+
+/* Default Button */
+
+.btn-default, .btn-default:active, .btn-default:focus {
+    color: $default;
+    border: 2px solid $default;
+    background: transparent;
+}
+
+.btn-default:hover {
+    color: $white;
+    background: $default;
+    border: 2px solid $default;
+}
+
+.btn-default-filled, .btn-default-filled:active, .btn-default-filled:focus  {
+    color: $white;
+    background: $default;
+    border: 2px solid $default;
+}
+
+.btn-default-filled:hover {
+    color: $white;
+    background: $default-hover;
+    border: 2px solid $default-hover;
+}
+
+/* / End Default Button */
+
+
+/* Primary Button */
+
+.btn-primary, .btn-primary:active, .btn-primary:focus  {
+    color: $primary;
+    border: 2px solid $primary;
+    background: transparent;
+}
+
+.btn-primary:hover {
+    color: $white;
+    background: $primary;
+    border: 2px solid $primary;
+}
+
+.btn-primary-filled, .btn-primary-filled:active, .btn-primary-filled:focus  {
+    color: $white;
+    background: $primary;
+    border: 2px solid $primary;
+}
+
+.btn-primary-filled:hover {
+    color: $white;
+    background: $primary-hover;
+    border: 2px solid $primary-hover;
+}
+
+/* / End Primary Button */
+
+
+/* Success Button */
+
+.btn-success, .btn-success:active, .btn-success:focus {
+    color: $success;
+    border: 2px solid $success;
+    background: transparent;
+}
+
+.btn-success:hover {
+    color: $white;
+    background: $success;
+    border: 2px solid $success;
+}
+
+.btn-success-filled, .btn-success-filled:active, .btn-success-filled:focus {
+    color: $white;
+    background: $success;
+    border: 2px solid $success;
+}
+
+.btn-success-filled:hover {
+    color: $white;
+    background: $success-hover;
+    border: 2px solid $success-hover;
+}
+
+/* / End Success Button */
+
+
+/* Info Button */
+
+.btn-info, .btn-info:active, .btn-info:focus {
+    color: $info;
+    border: 2px solid $info;
+    background: transparent;
+}
+
+.btn-info:hover {
+    color: $white;
+    background: $info;
+    border: 2px solid $info;
+}
+
+.btn-info-filled, .btn-info-filled:active, .btn-info-filled:focus {
+    color: $white;
+    background: $info;
+    border: 2px solid $info;
+}
+
+.btn-info-filled:hover {
+    color: $white;
+    background: $info-hover;
+    border: 2px solid $info-hover;
+}
+
+/* / End Info Button */
+
+
+/* Warning Button */
+
+.btn-warning, .btn-warning:active, .btn-warning:focus  {
+    color: $warning;
+    border: 2px solid $warning;
+    background: transparent;
+}
+
+.btn-warning:hover {
+    color: $white;
+    background: $warning;
+    border: 2px solid $warning;
+}
+
+.btn-warning-filled, .btn-warning-filled:active, .btn-warning-filled:focus  {
+    color: $white;
+    background: $warning;
+    border: 2px solid $warning;
+}
+
+.btn-warning-filled:hover {
+    color: $white;
+    background: $warning-hover;
+    border: 2px solid $warning-hover;
+}
+
+/* / End Warning Button */
+
+
+/* Danger Button */
+
+.btn-danger, .btn-danger:active, .btn-danger:focus {
+    color: $danger;
+    border: 2px solid $danger;
+    background: transparent;
+}
+
+.btn-danger:hover {
+    color: $white;
+    background: $danger;
+    border: 2px solid $danger
+}
+
+.btn-danger-filled, .btn-danger-filled:active, .btn-danger-filled:focus {
+    color: $white;
+    background: $danger;
+    border: 2px solid $danger;
+}
+
+.btn-danger-filled:hover {
+    color: $white;
+    background: $danger-hover;
+    border: 2px solid $danger-hover;
+}
+
+/* / End Danger Button */
+
+
+/* Social Buttons */
+
+.btn-social {
+    font-size: 13px;
+    padding: 8px 15px;
+    letter-spacing: $letter-spacing;
+    vertical-align: middle;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -ms-transition:  0.2s ease-in;
+    transition: 0.2s ease-in;
+    margin: 5px;
+}
+
+a.btn-social {
+    white-space: nowrap;
+}
+
+.btn-social span {
+    margin-left: 10px;
+}
+
+/* Facebook Button */
+
+.btn-facebook, .btn-facebook:active, .btn-facebook:focus {
+    color: $facebook;
+    background: transparent;
+    border: 2px solid $facebook;
+}
+
+.btn-facebook:hover {
+    color: $white !important;
+    background: $facebook;
+    border: 2px solid $facebook;
+}
+
+.btn-facebook-filled, .btn-facebook-filled:active, .btn-facebook-filled:focus {
+    color: $white;
+    background: $facebook;
+    border: 2px solid $facebook;
+}
+
+.btn-facebook-filled:hover {
+    color: $white;
+    background: $facebook-hover;
+    border: 2px solid $facebook-hover;
+}
+
+.btn-facebook-link, .btn-facebook-link:active, .btn-facebook-link:focus {
+    color: $facebook;
+    background: transparent;
+    border: none;
+}
+
+.btn-facebook-link:hover {
+    color: $facebook-hover;
+}
+
+/* / End Facebook Button */
+
+
+/* Twitter Button */
+
+.btn-twitter, .btn-twitter:active, .btn-twitter:focus {
+    color: $twitter;
+    background: transparent;
+    border: 2px solid $twitter;
+}
+
+.btn-twitter:hover {
+    color: $white;
+    background: $twitter;
+    border: 2px solid $twitter;
+}
+
+.btn-twitter-filled, .btn-twitter-filled:active, .btn-twitter-filled:focus {
+    color: $white;
+    background: $twitter;
+    border: 2px solid $twitter;
+}
+
+.btn-twitter-filled:hover {
+    color: $white;
+    background: $twitter-hover;
+    border: 2px solid $twitter-hover;
+}
+
+.btn-twitter-filled:hover {
+    color: $white;
+    background: $twitter-hover;
+    border: 2px solid $twitter-hover;
+}
+
+.btn-twitter-link, .btn-twitter-link:active, .btn-twitter-link:focus {
+    color: $twitter;
+    background: transparent;
+    border: none;
+}
+
+.btn-twitter-link:hover {
+    color: $twitter-hover;
+}
+
+/* / End Twitter Button */
+
+
+/* Google Button */
+
+.btn-google, .btn-google:active, .btn-google:focus {
+    color: $google;
+    background: transparent;
+    border: 2px solid $google;
+}
+
+.btn-google:hover {
+    color: $white;
+    background: $google;
+    border: 2px solid $google;
+}
+
+.btn-google-filled, .btn-google-filled:active, .btn-google-filled:focus {
+    color: $white;
+    background: $google;
+    border: 2px solid $google;
+}
+
+.btn-google-filled:hover {
+    color: $white;
+    background: $google-hover;
+    border: 2px solid $google-hover;
+}
+
+.btn-google-link, .btn-google-link:active, .btn-google-link:focus {
+    color: $google;
+    background: transparent;
+    border: none;
+}
+
+.btn-google-link:hover {
+    color: $google-hover;
+}
+
+/* / End Google Button */
+
+
+/* Linkedin Button */
+
+.btn-linkedin, .btn-linkedin:active, .btn-linkedin:focus {
+    color: $linkedin;
+    background: transparent;
+    border: 2px solid $linkedin;
+}
+
+.btn-linkedin:hover {
+    color: $white;
+    background: $linkedin;
+    border: 2px solid $linkedin;
+}
+
+.btn-linkedin-filled, .btn-linkedin-filled:active, .btn-linkedin-filled:focus {
+    color: $white;
+    background: $linkedin;
+    border: 2px solid $linkedin;
+}
+
+.btn-linkedin-filled:hover {
+    color: $white;
+    background: $linkedin-hover;
+    border: 2px solid $linkedin-hover;
+}
+
+.btn-linkedin-link, .btn-linkedin-link:active, .btn-linkedin-link:focus {
+    color: $linkedin;
+    background: transparent;
+    border: none;
+}
+
+.btn-linkedin-link:hover {
+    color: $linkedin-hover;
+}
+
+/* / End Linkedin Button */
+
+
+/* Pinterest Button */
+
+.btn-pinterest, .btn-pinterest:active, .btn-pinterest:focus {
+    color: $pinterest;
+    background: transparent;
+    border: 2px solid $pinterest;
+}
+
+.btn-pinterest:hover {
+    color: $white;
+    background: $pinterest;
+    border: 2px solid $pinterest;
+}
+
+.btn-pinterest-filled, .btn-pinterest-filled:active, .btn-pinterest-filled:focus {
+    color: $white;
+    background: $pinterest;
+    border: 2px solid $pinterest;
+}
+
+.btn-pinterest-filled:hover {
+    color: $white;
+    background: $pinterest-hover;
+    border: 2px solid $pinterest-hover;
+}
+
+.btn-pinterest-link, .btn-pinterest-link:active, .btn-pinterest-link:focus {
+    color: $pinterest;
+    background: transparent;
+    border: none;
+}
+
+.btn-pinterest-link:hover {
+    color: $pinterest-hover;
+}
+
+/* / End Pinterest Button */
+
+
+/* Dribbble Button */
+
+.btn-dribbble, .btn-dribbble:active, .btn-dribbble:focus {
+    color: $dribbble;
+    background: transparent;
+    border: 2px solid $dribbble;
+}
+
+.btn-dribbble:hover {
+    color: $white;
+    background: $dribbble;
+    border: 2px solid $dribbble;
+}
+
+.btn-dribbble-filled, .btn-dribbble-filled:active, .btn-dribbble-filled:focus {
+    color: $white;
+    background: $dribbble;
+    border: 2px solid $dribbble;
+}
+
+.btn-dribbble-filled:hover {
+    color: $white;
+    background: $dribbble-hover;
+    border: 2px solid $dribbble-hover;
+}
+
+.btn-dribbble-link, .btn-dribbble-link:active, .btn-dribbble-link:focus {
+    color: $dribbble;
+    background: transparent;
+    border: none;
+}
+
+.btn-dribbble-link:hover {
+    color: $dribbble-hover;
+}
+
+/* / End Dribbble Button */
+
+/* / End Social Buttons */
+
+/* Checkboxes */
+
+.checkbox {
+    padding-left: 10px;
+}
+
+.checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    width: 25px;
+    height: 25px;
+ }
+
+.checkbox label span {
+    margin-top: 4px;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.checkbox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    margin-left: -20px;
+    border: 2px solid $grey;
+    border-radius: 5px;
+    background-color: $white;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.checkbox label::after {
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: 0;
+    margin-left: -17px;
+    padding-left: 3px;
+    padding-top: 3px;
+    font-size: 14px;
+    color: $default;
+}
+
+ .checkbox+.checkbox, .radio+.radio {
+    margin-top: 0;
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+}
+
+.checkbox input[type="checkbox"]:disabled + label {
+    opacity: 0.3;
+}
+
+.checkbox input[type="checkbox"]:disabled + label::before {
+    background-color: $light-grey;
+    cursor: not-allowed;
+}
+
+.checkbox.checkbox-circle label::before {
+    border-radius: 50%;
+}
+
+.checkbox.checkbox-inline {
+    margin-top: 0;
+}
+
+.checkbox-default input[type="checkbox"]:checked + label::before {
+    background-color: $default;
+    border-color: $default;
+}
+
+.checkbox-default input[type="checkbox"]:checked + label::after {
+    color: $white;
+}
+
+.checkbox-default label {
+    color: $default;
+ }
+
+.checkbox-primary input[type="checkbox"]:checked + label::before {
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + label::after {
+    color: $white;
+}
+
+.checkbox-primary label {
+    color: $primary;
+ }
+
+.checkbox-success input[type="checkbox"]:checked + label::before {
+    background-color: $success;
+    border-color: $success;
+}
+
+.checkbox-success input[type="checkbox"]:checked + label::after {
+    color: $white;
+}
+
+.checkbox-success label {
+    color: $success;
+ }
+
+.checkbox-info input[type="checkbox"]:checked + label::before {
+    background-color: $info;
+    border-color: $info;
+}
+
+.checkbox-info input[type="checkbox"]:checked + label::after {
+    color: $white;
+}
+
+.checkbox-info label {
+    color: $info;
+ }
+
+.checkbox-warning input[type="checkbox"]:checked + label::before {
+    background-color: $warning;
+    border-color: $warning;
+}
+
+.checkbox-warning input[type="checkbox"]:checked + label::after {
+    color: $white;
+}
+
+.checkbox-warning label {
+    color: $warning;
+ }
+
+.checkbox-danger input[type="checkbox"]:checked + label::before {
+    background-color: $danger;
+    border-color: $danger;
+}
+
+.checkbox-danger input[type="checkbox"]:checked + label::after {
+    color: $white;
+}
+
+.checkbox-danger label {
+    color: $danger;
+ }
+
+/* / End Checkboxes */
+
+
+/* Radio Buttons */
+
+.radio {
+    padding-left: 10px;
+}
+
+.radio label {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    width: 25px;
+    height: 25px
+}
+
+.radio label span {
+    margin-top: 2px;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.radio label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    margin-left: -20px;
+    border: 3px solid $grey;
+    border-radius: 50%;
+    background-color: $white;
+    -webkit-transition: border 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out;
+}
+
+.radio label::after {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 11px;
+    height: 11px;
+    left: 7px;
+    top: 7px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: $grey;
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+}
+
+.radio input[type="radio"] {
+    opacity: 0;
+}
+
+.radio input[type="radio"]:checked + label::after {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.radio input[type="radio"]:disabled + label {
+    opacity: 0.3;
+}
+
+.radio input[type="radio"]:disabled + label::before {
+    cursor: not-allowed;
+}
+
+.radio.radio-inline {
+    margin-top: 0;
+}
+
+.radio-default input[type="radio"] + label::after {
+    background-color: $default;
+}
+
+.radio-default input[type="radio"]:checked + label::before {
+    border-color: $default;
+}
+
+.radio-default input[type="radio"]:checked + label::after {
+    background-color: $default;
+}
+
+.radio-default label {
+    color: $default;
+}
+
+.radio-primary input[type="radio"] + label::after {
+    background-color: $primary;
+}
+
+.radio-primary input[type="radio"]:checked + label::before {
+    border-color: $primary;
+}
+
+.radio-primary input[type="radio"]:checked + label::after {
+    background-color: $primary;
+}
+
+.radio-primary label {
+    color: $primary;
+}
+
+.radio-success input[type="radio"] + label::after {
+    background-color: $success;
+}
+
+.radio-success input[type="radio"]:checked + label::before {
+    border-color: $success;
+}
+
+.radio-success input[type="radio"]:checked + label::after {
+    background-color: $success;
+}
+
+.radio-success label {
+    color: $success;
+}
+
+.radio-info input[type="radio"] + label::after {
+    background-color: $info;
+}
+
+.radio-info input[type="radio"]:checked + label::before {
+    border-color: $info;
+}
+
+.radio-info input[type="radio"]:checked + label::after {
+    background-color: $info;
+}
+
+.radio-info label {
+    color: $info;
+}
+
+.radio-warning input[type="radio"] + label::after {
+    background-color: $warning;
+}
+
+.radio-warning input[type="radio"]:checked + label::before {
+    border-color: $warning;
+}
+
+.radio-warning input[type="radio"]:checked + label::after {
+    background-color: $warning;
+}
+
+.radio-warning label {
+    color: $warning;
+}
+
+.radio-danger input[type="radio"] + label::after {
+    background-color: $danger;
+}
+
+.radio-danger input[type="radio"]:checked + label::before {
+    border-color: $danger;
+}
+
+.radio-danger input[type="radio"]:checked + label::after {
+    background-color: $danger;
+}
+
+.radio-danger label {
+    color: $danger;
+}
+
+/* / End Radio Buttons */
+
+
+/* Paginations */
+
+.pagination .btn {
+    font-size: 12px;
+    font-weight: $regular;
+    padding: 4px 15px;
+    margin: 0 5px;
+    line-height: 2em;
+}
+
+.pagination .btn-direction {
+    font-size: 10px;
+    padding: 5.5px 12px;
+    line-height: 2.1em;
+}
+
+.pagination .btn-default {
+    color: $default;
+    border: 1px solid $light-grey;
+    background: transparent;
+}
+
+.pagination .btn-default:hover {
+    color: $white;
+    background: $primary;
+    border: 1px solid $primary;
+}
+
+.pagination .btn-active {
+    color: $white !important;
+    background: $primary !important;
+    border: 1px solid $primary !important;
+}
+
+.pagination .btn-active:hover {
+    color: $white !important;
+    background: $primary-hover !important;
+    border: 1px solid $primary-hover !important;
+}
+
+.pagination .btn-default-filled {
+    color: $default;
+    background: $light-grey;
+    border: 1px solid $light-grey;
+}
+
+.pagination .btn-default-filled:hover {
+    color: $white;
+    background: $primary;
+    border: 1px solid $primary;
+}
+
+.pagination .btn-circle {
+    border-radius: 50% !important;
+    height: 30px;
+    width: 30px;
+    padding: 3px !important;
+}
+
+/* / End Paginations */
+
+
+/* Button Groups */
+
+.btn-group-xl>.btn {
+    font-size: 20px;
+    padding: 9px 10px;
+    border-radius: 5px;
+}
+
+.btn-group-lg>.btn {
+    font-size: 15px;
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+
+.btn-group>.btn {
+    border-radius: 5px;
+}
+
+.btn-group-sm>.btn {
+    font-size: 12px;
+    padding: 5px 4px;
+    border-radius: 5px;
+}
+
+.btn-group-xs>.btn {
+    font-size: 10px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* / End Button Groups */
+
+
+/* Dropdown Buttons */
+
+.dropdown-buttons {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-buttons .btn-group > .btn {
+    padding-left: 17px;
+}
+
+.dropdown-buttons .dropdown-icon {
+    margin: 0 2px 0 10px;
+}
+
+.dropdown-buttons .btn {
+    border-radius: 0;
+}
+
+.btn-group.open .dropdown-toggle {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    color: $white;
+    background-color: $default;
+    border-color: $default;
+}
+
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+    color: $white;
+    background-color: $default;
+    border-color: $default;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.dropdown-toggle.btn-success.focus, .open>.dropdown-toggle.btn-success:focus, .open>.dropdown-toggle.btn-success:hover {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+}
+
+.btn-success.active, .btn-success:active, .open>.dropdown-toggle.btn-success {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+}
+
+.btn-info.active.focus, .btn-info.active:focus, .btn-info.active:hover, .btn-info:active.focus, .btn-info:active:focus, .btn-info:active:hover, .open>.dropdown-toggle.btn-info.focus, .open>.dropdown-toggle.btn-info:focus, .open>.dropdown-toggle.btn-info:hover {
+    color: $white;
+    background-color: $info;
+    border-color: $info;
+}
+
+.btn-info.active, .btn-info:active, .open>.dropdown-toggle.btn-info {
+    color: $white;
+    background-color: $info;
+    border-color: $info;
+}
+
+.btn-warning.active.focus, .btn-warning.active:focus, .btn-warning.active:hover, .btn-warning:active.focus, .btn-warning:active:focus, .btn-warning:active:hover, .open>.dropdown-toggle.btn-warning.focus, .open>.dropdown-toggle.btn-warning:focus, .open>.dropdown-toggle.btn-warning:hover {
+    color: $white;
+    background-color: $warning;
+    border-color: $warning;
+}
+
+.btn-warning.active, .btn-warning:active, .open>.dropdown-toggle.btn-warning {
+    color: $white;
+    background-color: $warning;
+    border-color: $warning;
+}
+
+.btn-danger.active.focus, .btn-danger.active:focus, .btn-danger.active:hover, .btn-danger:active.focus, .btn-danger:active:focus, .btn-danger:active:hover, .open>.dropdown-toggle.btn-danger.focus, .open>.dropdown-toggle.btn-danger:focus, .open>.dropdown-toggle.btn-danger:hover {
+    color: $white;
+    background-color: $danger;
+    border-color: $danger;
+}
+
+.btn-danger.active, .btn-danger:active, .open>.dropdown-toggle.btn-danger {
+    color: $white;
+    background-color: $danger;
+    border-color: $danger;
+}
+
+/* / End Dropdown Buttons */
+/* / End Buttons */

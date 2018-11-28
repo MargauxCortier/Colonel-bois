@@ -1,0 +1,52 @@
+@import 'variables';
+/* Progress Bars */
+
+.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: $light-grey;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.progress-bar {
+    font-size: 12px;
+    line-height: 20px;
+    color: $white;
+    background-color: $primary;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.progress-bar-default {
+    background-color: $default;
+}
+
+.progress-bar-primary {
+    background-color: $primary;
+}
+
+.progress-bar-success {
+    background-color: $success;
+}
+
+.progress-bar-info {
+    background-color: $info;
+}
+
+.progress-bar-warning {
+    background-color: $warning;
+}
+
+.progress-bar-danger {
+    background-color: $danger;
+}
+
+.progress-label .sr-only {
+    position: relative;
+}
+
+/* / End Progress Bars */
