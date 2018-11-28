@@ -12,11 +12,10 @@
 //
 //
 //
-//= require bootstrap-sprockets
 //= require jquery3
-//= require jquery
-//=	require jquery_ujs
 //= require popper
+//= require bootstrap-sprockets
+//= require owl.carousel.min
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
