@@ -96,8 +96,8 @@
                 </div><!-- / slide 3 -->
             </div><!-- /carousel-inner -->
             <!-- controls -->
-<!--             <a class="left carousel-control" href="#slider" data-slide="prev"><span class="lnr lnr-chevron-left"></span></a>
-            <a class="right carousel-control" href="#slider" data-slide="next"><span class="lnr lnr-chevron-right"></span></a> -->
+            <a class="left carousel-control" href="#slider" data-slide="prev"><span class="lnr lnr-chevron-left"></span></a>
+            <a class="right carousel-control" href="#slider" data-slide="next"><span class="lnr lnr-chevron-right"></span></a>
             <!-- / controls -->
         </div>
         <!-- / slider-->
@@ -163,22 +163,22 @@
 <!-- featured-products -->
 <section id="featured-products">
     <div class="page-header text-center wsub">
-        <h2>Featured Products</h2>
+        <h2>Featured Products 8</h2>
     </div><!--/ page-header -->
     <div id="products-carousel" class="owl-carousel">
-
+        <% @item.last(8).each do |item|  %> 
         <!-- item -->
         <div class="item product">
-            <span class="sale-label">SALE</span>
+            <!-- <span class="sale-label">SALE</span> -->
             <!-- / sale-label -->
-            <a href="single-product.html" class="product-link"></a>
+            <a href="/single/<%= item.id %>" class="product-link"></a>
             <!-- / product-link -->
-            <%= image_tag('f-product.jpg') %>
+            <img src="<%= item.image_url %>">
             <!-- / product-image -->
 
             <!-- product-hover-tools -->
             <div class="product-hover-tools">
-                <a href="single-product.html" class="view-btn">
+                <a href="/single/<%= item.id %>" class="view-btn">
                     <i class="lnr lnr-eye"></i>
                 </a>
                 <a href="shopping-cart.html" class="add-to-cart">
@@ -188,11 +188,11 @@
 
             <!-- product-details -->
             <div class="product-details">
-                <h3 class="product-title">Leather Bag</h3>
-                <h6 class="product-price"><del>$149</del> <span class="sale-price">$79</span></h6>
+                <h3 class="product-title"><%= item.title %></h3>
+                <h6 class="product-price"><del><%= item.price %> €</del> <span class="sale-price">$79</span></h6>
             </div><!-- / product-details -->
         </div>
-        <!-- / item -->
+        <!-- / item --><% end %>
 
         <!-- item -->
         <div class="item product">
@@ -383,17 +383,17 @@
     </div><!--/ page-header -->
     <div class="container">
         <div id="grid" class="row">
-
+            <% @item.last(3).each do |item|  %>
             <!-- product -->
             <div class="col-xs-6 col-md-4 product">
-                <a href="single-product.html" class="product-link"></a>
+                <a href="/single/<%= item.id %>" class="product-link"></a>
                 <!-- / product-link -->
-                <%= image_tag('f-product.jpg') %>
+                <img src="<%= item.image_url %>">
                 <!-- / product-image -->
 
                 <!-- product-hover-tools -->
                 <div class="product-hover-tools">
-                    <a href="single-product.html" class="view-btn">
+                    <a href="/single/<%= item.id %>" class="view-btn">
                         <i class="lnr lnr-eye"></i>
                     </a>
                     <a href="shopping-cart.html" class="add-to-cart">
@@ -403,204 +403,10 @@
 
                 <!-- product-details -->
                 <div class="product-details">
-                    <h3 class="product-title">Women's Shirt</h3>
-                    <h6 class="product-price">$59</h6>
+                    <h3 class="product-title"><%= item.title %></h3>
+                    <h6 class="product-price"><%= item.price %> €</h6>
                 </div><!-- / product-details -->
-            </div><!-- / product -->
-
-            <!-- product -->
-            <div class="col-xs-6 col-md-4 product">
-                <span class="sale-label">SALE</span>
-                <a href="single-product.html" class="product-link"></a>
-                <!-- / product-link -->
-                <%= image_tag('f-product.jpg') %>
-                <!-- / product-image -->
-
-                <!-- product-hover-tools -->
-                <div class="product-hover-tools">
-                    <a href="single-product.html" class="view-btn">
-                        <i class="lnr lnr-eye"></i>
-                    </a>
-                    <a href="shopping-cart.html" class="add-to-cart">
-                        <i class="lnr lnr-cart"></i>
-                    </a>
-                </div><!-- / product-hover-tools -->
-
-                <!-- product-details -->
-                <div class="product-details">
-                    <h3 class="product-title">Women's Shirt</h3>
-                    <h6 class="product-price"><del>$49</del> <span class="sale-price">$29</span></h6>
-                </div><!-- / product-details -->
-            </div><!-- / product -->
-
-            <!-- product -->
-            <div class="col-xs-6 col-md-4 product">
-                <a href="single-product.html" class="product-link"></a>
-                <!-- / product-link -->
-                <%= image_tag('f-product.jpg') %>
-                <!-- / product-image -->
-
-                <!-- product-hover-tools -->
-                <div class="product-hover-tools">
-                    <a href="single-product.html" class="view-btn">
-                        <i class="lnr lnr-eye"></i>
-                    </a>
-                    <a href="shopping-cart.html" class="add-to-cart">
-                        <i class="lnr lnr-cart"></i>
-                    </a>
-                </div><!-- / product-hover-tools -->
-
-                <!-- product-details -->
-                <div class="product-details">
-                    <h3 class="product-title">Women's Shirt</h3>
-                    <h6 class="product-price">$99</h6>
-                </div><!-- / product-details -->
-            </div><!-- / product -->
-
-            <!-- product -->
-            <div class="col-xs-6 col-md-4 product">
-                <a href="single-product.html" class="product-link"></a>
-                <!-- / product-link -->
-                <%= image_tag('f-product.jpg') %>
-                <!-- / product-image -->
-
-                <!-- product-hover-tools -->
-                <div class="product-hover-tools">
-                    <a href="single-product.html" class="view-btn">
-                        <i class="lnr lnr-eye"></i>
-                    </a>
-                    <a href="shopping-cart.html" class="add-to-cart">
-                        <i class="lnr lnr-cart"></i>
-                    </a>
-                </div><!-- / product-hover-tools -->
-
-                <!-- product-details -->
-                <div class="product-details">
-                    <h3 class="product-title">Women's Shirt</h3>
-                    <h6 class="product-price">$29</h6>
-                </div><!-- / product-details -->
-            </div><!-- / product -->
-
-            <!-- product -->
-            <div class="col-xs-6 col-md-4 product">
-                <a href="single-product.html" class="product-link"></a>
-                <!-- / product-link -->
-                <%= image_tag('f-product.jpg') %>
-                <!-- / product-image -->
-
-                <!-- product-hover-tools -->
-                <div class="product-hover-tools">
-                    <a href="single-product.html" class="view-btn">
-                        <i class="lnr lnr-eye"></i>
-                    </a>
-                    <a href="shopping-cart.html" class="add-to-cart">
-                        <i class="lnr lnr-cart"></i>
-                    </a>
-                </div><!-- / product-hover-tools -->
-
-                <!-- product-details -->
-                <div class="product-details">
-                    <h3 class="product-title">Women's Jeans</h3>
-                    <h6 class="product-price">$69</h6>
-                </div><!-- / product-details -->
-            </div><!-- / product -->
-
-            <!-- product -->
-            <div class="col-xs-6 col-md-4 product">
-                <a href="single-product.html" class="product-link"></a>
-                <!-- / product-link -->
-                <%= image_tag('f-product.jpg') %>
-                <!-- / product-image -->
-
-                <!-- product-hover-tools -->
-                <div class="product-hover-tools">
-                    <a href="single-product.html" class="view-btn">
-                        <i class="lnr lnr-eye"></i>
-                    </a>
-                    <a href="shopping-cart.html" class="add-to-cart">
-                        <i class="lnr lnr-cart"></i>
-                    </a>
-                </div><!-- / product-hover-tools -->
-
-                <!-- product-details -->
-                <div class="product-details">
-                    <h3 class="product-title">Women's Shirt</h3>
-                    <h6 class="product-price">$39</h6>
-                </div><!-- / product-details -->
-            </div><!-- / product -->
-
-            <!-- product -->
-            <div class="col-xs-6 col-md-4 product">
-                <a href="single-product.html" class="product-link"></a>
-                <!-- / product-link -->
-                <%= image_tag('f-product.jpg') %>
-                <!-- / product-image -->
-
-                <!-- product-hover-tools -->
-                <div class="product-hover-tools">
-                    <a href="single-product.html" class="view-btn">
-                        <i class="lnr lnr-eye"></i>
-                    </a>
-                    <a href="shopping-cart.html" class="add-to-cart">
-                        <i class="lnr lnr-cart"></i>
-                    </a>
-                </div><!-- / product-hover-tools -->
-
-                <!-- product-details -->
-                <div class="product-details">
-                    <h3 class="product-title">Designer Watch</h3>
-                    <h6 class="product-price">$599</h6>
-                </div><!-- / product-details -->
-            </div><!-- / product -->
-
-            <!-- product -->
-            <div class="col-xs-6 col-md-4 product">
-                <a href="single-product.html" class="product-link"></a>
-                <!-- / product-link -->
-                <%= image_tag('f-product.jpg') %>
-                <!-- / product-image -->
-
-                <!-- product-hover-tools -->
-                <div class="product-hover-tools">
-                    <a href="single-product.html" class="view-btn">
-                        <i class="lnr lnr-eye"></i>
-                    </a>
-                    <a href="shopping-cart.html" class="add-to-cart">
-                        <i class="lnr lnr-cart"></i>
-                    </a>
-                </div><!-- / product-hover-tools -->
-
-                <!-- product-details -->
-                <div class="product-details">
-                    <h3 class="product-title">Men's Gloves</h3>
-                    <h6 class="product-price">$199</h6>
-                </div><!-- / product-details -->
-            </div><!-- / product -->
-
-            <!-- product -->
-            <div class="col-xs-6 col-md-4 product">
-                <span class="sale-label">SALE</span>
-                <a href="single-product.html" class="product-link"></a>
-                <!-- / product-link -->
-                <%= image_tag('f-product.jpg') %>
-                <!-- / product-image -->
-
-                <!-- product-hover-tools -->
-                <div class="product-hover-tools">
-                    <a href="single-product.html" class="view-btn">
-                        <i class="lnr lnr-eye"></i>
-                    </a>
-                    <a href="shopping-cart.html" class="add-to-cart">
-                        <i class="lnr lnr-cart"></i>
-                    </a>
-                </div><!-- / product-hover-tools -->
-
-                <!-- product-details -->
-                <div class="product-details">
-                    <h3 class="product-title">Leather Bag</h3>
-                    <h6 class="product-price"><del>$149</del> <span class="sale-price">$79</span></h6>
-                </div><!-- / product-details -->
-            </div><!-- / product -->
+            </div><!-- / product --><% end  %>
 
             <!-- grid-resizer -->
             <div class="col-xs-6 col-md-4 shuffle_sizer"></div>

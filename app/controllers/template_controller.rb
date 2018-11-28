@@ -1,6 +1,7 @@
 class TemplateController < ApplicationController
 
 	def index
+		@item = Item.all
 	end
 
 	def about
