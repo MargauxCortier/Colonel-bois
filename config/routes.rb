@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  devise_for :users, path: 'users'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 		get '/', to: 'template#index'
+		post '/', to: 'template#call_to_action'
 		get '/shop', to: 'template#shop_full'
 		get '/about', to: 'template#about'
 		get '/single/:id', to: 'template#showproduct'
