@@ -50,7 +50,7 @@
         <div class="row">
 
             <div class="col-sm-12 content-area">
-                <p class="shop-results">Showing <strong>1-12</strong> of <strong><%= @item.count  %></strong> items. 
+                <p class="shop-results">Showing <strong>1-<%= @item.count  %></strong> items. 
                     <span class="pull-right">
                         <!-- <select class="selectpicker">
                             <optgroup label="Sort By:">
@@ -70,7 +70,7 @@
                     <div class="col-xs-6 col-md-3 product">
                         <a href="/single/<%= item.id %>" class="product-link"></a>
                         <!-- / product-link -->
-                        <img src="<%= item.image_url %>" >
+                        <%= image_tag(item.image_url) %>
                         <!-- / product-image -->
 
                         <!-- product-hover-tools -->

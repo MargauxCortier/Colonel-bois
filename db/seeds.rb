@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
-10.times do
-  items = Item.create(title: Faker::Artist.name, description: Faker::Lorem.paragraph, price: Faker::Commerce.price, image_url: Faker::Avatar.image)
+18.times do |i|
+  items = Item.create(title: Faker::Artist.name, description: Faker::Lorem.paragraph, price: Faker::Commerce.price, image_url: "#{i+1}.png")
 end

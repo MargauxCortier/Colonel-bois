@@ -56,7 +56,7 @@
                         <!-- wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="<%= @individual.image_url %>">
+                                <%= image_tag(@individual.image_url) %>
                             </div>
                             <!-- <div class="item">
                                 <%= image_tag('product-slide2.jpg') %>
@@ -153,161 +153,31 @@
                 <div class="product-details">
                     <h4><%= @individual.title %></h4>
                     <p><%= @individual.description %></p>
-                    <h4 class="space-top-30">Product Info</h4>
+                    <h4 class="space-top-30">Price</h4>
                     <div class="product-info">
                         <div class="info">
                             <p><i class="lnr lnr-tag"></i><span><%= @individual.price %> €</span></p>
                         </div>
-                        <div class="info">
+<!--                         <div class="info">
                             <p><i class="lnr lnr-heart"></i><span>Category: <a href="#"> Women's</a>, <a href="#">Shirts</a></span></p>
-                        </div>
+                        </div> -->
                         <!-- <div class="info">
                             <p><i class="lnr lnr-menu"></i><span>SKU: 3872473225</span></p>
                         </div> -->
                     </div><!-- / project-info -->
-
-                    <div class="buy-product">
-                        <div class="options">
-                            <input type="number" step="1" min="0" name="cart" value="1" title="Qty" class="input-text qty text" size="4">
-                            <span class="selectors">
-                                <select class="selectpicker">
-                                    <optgroup label="Size:">
-                                        <option>Small</option>
-                                        <option>Medium</option>
-                                        <option>Large</option>
-                                    </optgroup>
-                                </select>
-                                <select class="selectpicker two">
-                                    <optgroup label="Color:">
-                                        <option>Grey</option>
-                                        <option>Black</option>
-                                        <option>Blue</option>
-                                    </optgroup>
-                                </select>
-                            </span>
-                        </div>
                         <!-- / options -->
 
                         <div class="space-25">&nbsp;</div>
 
-                        <a href="shopping-cart.html" class="btn btn-primary-filled btn-rounded"><i class="lnr lnr-cart"></i><span> Add to Cart</span></a>
-                        <a href="checkout.html" class="btn btn-success-filled btn-rounded"><i class="lnr lnr-heart"></i><span> Buy Now</span></a>
+                        <a href="#" class="btn btn-primary-filled btn-rounded"><i class="lnr lnr-cart"></i><span> Add to Cart</span></a>
+                        <!-- <a href="checkout.html" class="btn btn-success-filled btn-rounded"><i class="lnr lnr-heart"></i><span> Buy Now</span></a> -->
                     </div>
-
-                    <div class="info-buttons">
-                        <a href="contact.html" class="btn btn-primary btn-rounded"><i class="lnr lnr-phone-handset"></i><span> Contact Us</span></a>
-                    </div><!-- / info-buttons -->
-
                 </div><!-- product-details -->
 
             </div><!-- / col-sm-4 col-md-3 -->
             <!-- / project sidebar area -->
 
         </div><!-- / row -->
-
-        <div id="related-products">
-            <h4 class="space-left space-bottom-30">Related Products</h4>
-            <div class="row">
-
-                <!-- product -->
-                <div class="col-xs-6 col-md-3 product">
-                    <span class="sale-label">SALE</span>
-                    <a href="single-product.html" class="product-link"></a>
-                    <!-- / product-link -->
-                    <%= image_tag('f-product.jpg') %>
-                    <!-- / product-image -->
-
-                    <!-- product-hover-tools -->
-                    <div class="product-hover-tools">
-                        <a href="single-product.html" class="view-btn">
-                            <i class="lnr lnr-eye"></i>
-                        </a>
-                        <a href="shopping-cart.html" class="add-to-cart">
-                            <i class="lnr lnr-cart"></i>
-                        </a>
-                    </div><!-- / product-hover-tools -->
-
-                    <!-- product-details -->
-                    <div class="product-details">
-                        <h3 class="product-title">Women's Shirt</h3>
-                        <h6 class="product-price"><del>$49</del> <span class="sale-price">$29</span></h6>
-                    </div><!-- / product-details -->
-                </div><!-- / product -->
-
-                <!-- product -->
-                <div class="col-xs-6 col-md-3 product">
-                    <a href="single-product.html" class="product-link"></a>
-                    <!-- / product-link -->
-                    <%= image_tag('f-product.jpg') %>
-                    <!-- / product-image -->
-
-                    <!-- product-hover-tools -->
-                    <div class="product-hover-tools">
-                        <a href="single-product.html" class="view-btn">
-                            <i class="lnr lnr-eye"></i>
-                        </a>
-                        <a href="shopping-cart.html" class="add-to-cart">
-                                <i class="lnr lnr-cart"></i>
-                        </a>
-                    </div><!-- / product-hover-tools -->
-
-                    <!-- product-details -->
-                    <div class="product-details">
-                        <h3 class="product-title">Women's Shirt</h3>
-                        <h6 class="product-price">$99</h6>
-                    </div><!-- / product-details -->
-                </div><!-- / product -->
-
-                <!-- product -->
-                <div class="col-xs-6 col-md-3 product">
-                    <a href="single-product.html" class="product-link"></a>
-                    <!-- / product-link -->
-                    <%= image_tag('f-product.jpg') %>
-                    <!-- / product-image -->
-
-                    <!-- product-hover-tools -->
-                    <div class="product-hover-tools">
-                        <a href="single-product.html" class="view-btn">
-                            <i class="lnr lnr-eye"></i>
-                        </a>
-                        <a href="shopping-cart.html" class="add-to-cart">
-                            <i class="lnr lnr-cart"></i>
-                        </a>
-                    </div><!-- / product-hover-tools -->
-
-                    <!-- product-details -->
-                    <div class="product-details">
-                        <h3 class="product-title">Women's Shirt</h3>
-                        <h6 class="product-price">$29</h6>
-                    </div><!-- / product-details -->
-                </div><!-- / product -->
-
-                <!-- product -->
-                <div class="col-xs-6 col-md-3 product">
-                    <a href="single-product.html" class="product-link"></a>
-                    <!-- / product-link -->
-                    <%= image_tag('f-product.jpg') %>
-                    <!-- / product-image -->
-
-                    <!-- product-hover-tools -->
-                    <div class="product-hover-tools">
-                        <a href="single-product.html" class="view-btn">
-                            <i class="lnr lnr-eye"></i>
-                        </a>
-                        <a href="shopping-cart.html" class="add-to-cart">
-                            <i class="lnr lnr-cart"></i>
-                        </a>
-                    </div><!-- / product-hover-tools -->
-
-                    <!-- product-details -->
-                    <div class="product-details">
-                        <h3 class="product-title">Women's Shirt</h3>
-                        <h6 class="product-price">$39</h6>
-                    </div><!-- / product-details -->
-                </div><!-- / product -->
-
-            </div><!-- / row -->
-        </div><!-- / related-products -->
     </div><!-- / container -->
 </section>
 <!-- / shop single-product -->
