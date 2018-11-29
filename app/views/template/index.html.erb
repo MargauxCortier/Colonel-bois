@@ -291,14 +291,30 @@
         <div class="page-header text-center">
             <h2>Subscribe for Newsletter</h2>
         </div>
-        <div class="input-group">
-            <input type="text" class="form-control rounded" placeholder="Your email address...">
-            <span class="input-group-btn">
-                <button class="btn btn-primary-filled btn-left btn-newsletter btn-rounded inside" type="button"><i class="lnr lnr-enter"></i><span>Subscribe</span></button>
-            </span>
-        </div><!-- /input-group -->
+            <form action="/" method="post" class="input-group">
+                <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+                <input type="text" class="form-control rounded" name="email" placeholder="Your email address...">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary-filled btn-left btn-newsletter btn-rounded inside" type="submit"><i class="lnr lnr-enter"></i><span>Subscribe</span></button>
+                </span>
+            </form>
     </div><!-- / container -->
 </section>
+
+<!--         <div class="forms" align="center">
+            <form action="/" method="post">
+                <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+                  Nickname:
+                  <input type="text" name="name">
+                  Email:
+                  <input type="text" name="email">
+                  <button type="submit" class="bouton" onclick="javascript:alert('You have been succesfully submit')">Here we go</button>
+            </form>
+        </div> -->
+
+
+
+
 <!-- / newsletter -->
 
 <!-- brands carousel -->
