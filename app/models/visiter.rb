@@ -1,2 +1,0 @@
-class Visiter < ApplicationRecord
-end
