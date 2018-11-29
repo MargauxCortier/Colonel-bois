@@ -8,5 +8,5 @@
 require 'faker'
 
 18.times do |i|
-  items = Item.create(title: Faker::Artist.name, description: Faker::Lorem.paragraph, price: Faker::Commerce.price, image_url: "#{i+1}.png")
+  items = Item.create(title: Faker::Artist.name, description: Faker::Lorem.paragraph, price: Faker::Commerce.price, image_url: "#{i+1}.jpg")
 end

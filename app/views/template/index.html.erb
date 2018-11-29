@@ -50,7 +50,6 @@
         <!-- slider -->
         <div id="slider" class="carousel slide">  
             <div class="carousel-inner">
-
                 <!-- slide 1 -->
                 <div class="item active slide1 fashion">
                     <div class="container">
@@ -58,7 +57,6 @@
                             <div class="row">
                                 <div class="col-md-12 slider-content">
                                     <h3 class="slide-title fadeInDown animated first"><span class="text-primary">in</span>Cart - Fashion</h3>
-                                    <p class="slide-text flipInX animated second">Quisque vitae tempor libero. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
                                     <a href="#categories" class="page-scroll btn btn-lg btn-primary-filled btn-pill fadeInUp animated third"><i class="lnr lnr-cart"></i> <span>Shop Now</span></a>
                                 </div><!-- slider-content -->
                             </div><!-- / row -->
@@ -73,7 +71,6 @@
                             <div class="row">
                                 <div class="col-md-12 slider-content">
                                     <h3 class="slide-title fadeInDown animated first"><span class="text-primary">in</span>Cart - Furniture</h3>
-                                    <p class="slide-text flipInX animated second">Vivamus facilisis sapien enim, eget lobortis ante faucibus vel. In hendrerit arcu eget arcu fringilla.</p>
                                     <a href="index2.html" class="btn btn-lg btn-primary-filled btn-pill fadeInUp animated third"><i class="lnr lnr-store"></i> <span>Visit Shop</span></a>
                                 </div><!-- slider-content -->
                             </div><!-- / row -->
@@ -88,7 +85,6 @@
                             <div class="row">
                                 <div class="col-md-12 slider-content">
                                     <h3 class="slide-title fadeInDown animated first"><span class="text-primary">in</span>Cart - Art</h3>
-                                    <p class="slide-text flipInX animated second">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sapien libero.</p>
                                     <a href="index3.html" class="btn btn-lg btn-primary-filled btn-pill fadeInUp animated third"><i class="lnr lnr-store"></i> <span>Visit Shop</span></a>
                                 </div><!-- slider-content -->
                             </div><!-- / row -->
@@ -97,8 +93,8 @@
                 </div><!-- / slide 3 -->
             </div><!-- /carousel-inner -->
             <!-- controls -->
-            <a class="left carousel-control" href="#slider" data-slide="prev"><span class="lnr lnr-chevron-left"></span></a>
-            <a class="right carousel-control" href="#slider" data-slide="next"><span class="lnr lnr-chevron-right"></span></a>
+<!--             <a class="left carousel-control" href="#slider" data-slide="prev"><span class="lnr lnr-chevron-left"></span></a>
+            <a class="right carousel-control" href="#slider" data-slide="next"><span class="lnr lnr-chevron-right"></span></a> -->
             <!-- / controls -->
         </div>
         <!-- / slider-->
@@ -107,10 +103,64 @@
 <!-- / header -->
 
 <!-- content -->
+
+<!-- categories -->
+<section id="categories">
+    <div class="container">
+        <div class="page-header text-center wsub">
+            <h2>Shop Categories</h2>
+        </div><!--/ page-header -->
+        <p class="title-description text-center">Proin malesuada commodo magna, eu porta nulla luctus id. Integer bibendum dolor id mi dignissim pulvinar. Proin tincidunt elit in augue congue efficitur.</p>
+        <div class="row">
+
+            <div class="col-sm-4 category">
+                <a href="index.html">
+                    <div class="category-item">
+                        <%= image_tag('category1.jpg') %>
+                        <div class="overlay">
+                            <div class="caption">
+                                <h4>Fashion</h4>
+                            </div>
+                        </div>
+                    </div><!-- / category-item -->
+                </a>
+            </div><!-- / category -->
+
+            <div class="col-sm-4 category">
+                <a href="index2.html">
+                    <div class="category-item">
+                        <%= image_tag('category2.jpg') %>
+                        <div class="overlay">
+                            <div class="caption">
+                                <h4>Furniture</h4>
+                            </div>
+                        </div>
+                    </div><!-- / category-item -->
+                </a>
+            </div><!-- / category -->
+
+            <div class="col-sm-4 category">
+                <a href="index3.html">
+                    <div class="category-item">
+                        <%= image_tag('category1.jpg') %>
+                        <div class="overlay">
+                            <div class="caption">
+                                <h4>Art</h4>
+                            </div>
+                        </div>
+                    </div><!-- / category-item -->
+                </a>
+            </div><!-- / category -->
+
+        </div><!-- / row -->
+    </div><!-- / container -->
+</section>
+<!-- / categories -->
+
 <!-- featured-products -->
 <section id="featured-products">
     <div class="page-header text-center wsub">
-        <h2>Featured Products</h2>
+        <h2>Featured Products 8</h2>
     </div><!--/ page-header -->
     <div id="products-carousel" class="owl-carousel">
         <% @item.last(8).shuffle.each do |item|  %> 
@@ -159,7 +209,6 @@
                 <a href="/single/<%= item.id %>" class="product-link"></a>
                 <!-- / product-link -->
                 <%= image_tag(item.image_url) %>
-
                 <!-- / product-image -->
 
                 <!-- product-hover-tools -->
@@ -238,12 +287,13 @@
         <div class="page-header text-center">
             <h2>Subscribe for Newsletter</h2>
         </div>
-        <div class="input-group">
-            <input type="text" class="form-control rounded" placeholder="Your email address...">
-            <span class="input-group-btn">
-                <button class="btn btn-primary-filled btn-left btn-newsletter btn-rounded inside" type="button"><i class="lnr lnr-enter"></i><span>Subscribe</span></button>
-            </span>
-        </div><!-- /input-group -->
+            <form action="/" method="post" class="input-group">
+                <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+                <input type="text" class="form-control rounded" name="email" placeholder="Your email address...">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary-filled btn-left btn-newsletter btn-rounded inside" type="submit"><i class="lnr lnr-enter"></i><span>Subscribe</span></button>
+                </span>
+            </form>
     </div><!-- / container -->
 </section>
 <!-- / newsletter -->
