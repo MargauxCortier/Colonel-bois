@@ -86,78 +86,6 @@
 
 <!-- content -->
 
- 
-
- 
-
-<!-- register form 1 -->
-<section>
-  
-            <div class="col-sm-6">
-
-                <div id="register-form">
-
-                    <h3 class="log-title">Register</h3>
-
-                    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-
-                      <%= devise_error_messages! %>
-
-                     
-
-                      <div class="form-group">
-
-                        <%= f.label :email %><br />
-
-                        <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder=>"Email", :class=>"form-control", :id=>"register-email"  %>
-
-                      </div>
-
-                     
-
-                      <div class="field">
-
-                        <%= f.label :password %>
-
-                        <% if @minimum_password_length %>
-
-                        <em>(<%= @minimum_password_length %> characters minimum)</em>
-
-                        <% end %><br />
-
-                        <%= f.password_field :password, autocomplete: "new-password", :class=>"form-control", :id=>"register-password", :placeholder=>"Password" %>
-
-                      </div>
-
-                     
-
-                      <div class="field">
-
-                        <%= f.label :password_confirmation %><br />
-
-                        <%= f.password_field :password_confirmation, autocomplete: "new-password", :class=>"form-control", :id=>"register-cpassword", :placeholder=>"Confirm Password" %>
-
-                      </div>
-
-
-
-                      <div class="actions">
-
-                        <%= f.submit "Sign up", :id=>"reg-submit", :class=>"btn btn-md btn-primary-filled btn-log btn-rounded" %>
-
-                      </div>
-                    <%= render "devise/shared/links" %>
-                    <% end %>
-
-            <!-- / register form 1 -->
-
-        </div><!-- / row -->
-
-        <!-- / form 1 -->
-
-    </div><!-- / container -->
-</section>
-
 <!-- / login-register -->
 <section id="login-register">
     <div class="container">
@@ -176,7 +104,7 @@
                         <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder=>"Email", :class=>"form-control", :id=>"register-email"  %>
 
                       </div>
-                    <div class="field">
+                    <div class="form-group">
 
                         <%= f.label :password %>
 
@@ -189,7 +117,7 @@
                         <%= f.password_field :password, autocomplete: "new-password", :class=>"form-control", :id=>"register-password", :placeholder=>"Password" %>
 
                       </div>
-                    <div class="field">
+                    <div class="form-group">
 
                         <%= f.label :password_confirmation %><br />
 
@@ -200,16 +128,15 @@
                   </br>
                     <div class="log-line reg-form-1 no-margin">
                         <div class="pull-left">
-                            <div class="actions">
-
+                            
                         <%= f.submit "Sign up", :id=>"reg-submit", :class=>"btn btn-md btn-primary-filled btn-log btn-rounded" %>
 
-                      </div>
+                      
                         </div>
                         <div class="pull-right">
                             <%= render "devise/shared/links" %>
-                    <% end %>
                         </div>
+                      <% end %>
                     </div><!-- / log-line -->
                 </div>
             </div><!-- / col-sm-6 -->

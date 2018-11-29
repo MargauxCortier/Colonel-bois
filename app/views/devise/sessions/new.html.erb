@@ -72,19 +72,18 @@
                         <% if devise_mapping.rememberable? -%>
                            <div class="checkbox checkbox-primary space-bottom">
                              <%= f.check_box :remember_me, :id=>"checkbox1" %>
-                             <%= f.label :remember_me %>
-                             <!-- <label for="checkbox1"><span>Remember Me</span></label> -->
+                             <label for="checkbox1"><span>Remember Me</span></label>
                            </div>
                          <% end -%>
                       
 
                         <div class="actions">
-                         <%= f.submit "Log in", :class=>"btn btn-md btn-primary-filled btn-log btn-rounded" %>
+                         <%= render "devise/shared/links" %>
                         </div>
                       </div>
                     
                       <div class="pull-right">
-                      <%= render "devise/shared/links" %>
+                        <%= f.submit "Log in", :class=>"btn btn-md btn-primary-filled btn-log btn-rounded" %>
                       </div>  
                     </div>
                     <% end %>
