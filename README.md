@@ -1,9 +1,6 @@
-https://colonel-bois.herokuapp.com
 
 # Projet THP E-commerce
  <a href="https://colonel-bois.herokuapp.com">Colonel-bois</a>
-
-### Projet : Projet : boutique e-commerce !
 
 ## Ennoncé demandé :
  
