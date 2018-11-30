@@ -4009,7 +4009,7 @@ footer .widget-title h4 {
 
 footer .widget-title:after {
   content: "";
-  background: #d8262d;
+  background: #cccccc;
   position: absolute;
   height: 2px;
   width: 30px;
