@@ -59,7 +59,7 @@ h6 {
 }
 
 a {
-  color: #cccccc;
+  color: #130808;
   -moz-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
   -webkit-transition: 0.2s ease-in;
@@ -71,7 +71,7 @@ a {
   outline: 0 !important;
 }
 a:hover, a:active, a:focus {
-  color: #6d6b6b;
+  color: #cccccc;
   text-decoration: none;
 }
 
@@ -2207,11 +2207,11 @@ table.shopping-cart > thead > tr > th, table > thead > tr > td {
 }
 
 .top-menu a:hover {
-  color: #74769a !important;
+  color: #ffffff !important;
 }
 
 .top-menu-inverse a {
-  color: #8687ef !important
+  color: #a7a7a7  !important
 }
 
 .top-menu-primary a {
