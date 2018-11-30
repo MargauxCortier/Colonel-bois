@@ -59,7 +59,7 @@ h6 {
 }
 
 a {
-  color: #4cbbdb;
+  color: #cccccc;
   -moz-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
   -webkit-transition: 0.2s ease-in;
@@ -71,7 +71,7 @@ a {
   outline: 0 !important;
 }
 a:hover, a:active, a:focus {
-  color: #3e9db8;
+  color: #6d6b6b;
   text-decoration: none;
 }
 
@@ -185,7 +185,7 @@ strong {
 }
 
 .text-primary {
-  color: #4cbbdb;
+  color: #fcf4d7;
 }
 
 .text-success {
@@ -267,7 +267,7 @@ img.btn-pill {
 
 .page-header:after {
   content: "";
-  background: #4cbbdb;
+  background: #d9262d;
   position: absolute;
   height: 2px;
   width: 50px;
@@ -677,8 +677,8 @@ a.btn {
 
 .btn-primary-filled, .btn-primary-filled:active, .btn-primary-filled:focus {
   color: white;
-  background: #4cbbdb;
-  border: 2px solid #4cbbdb;
+  background: #575afe;
+  border: 2px solid #575afe;
 }
 
 .btn-primary-filled:hover {
@@ -1591,10 +1591,10 @@ a.btn-social {
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
-  color: #4cbbdb;
+  color: #d9262e;
   background: none;
   border: none;
-  border-bottom: 2px solid #4cbbdb !important;
+  border-bottom: 2px solid #d9262e !important;
   -webkit-transition: 0s;
   -moz-transition: 0s;
   -o-transition: 0s;
@@ -2207,11 +2207,11 @@ table.shopping-cart > thead > tr > th, table > thead > tr > td {
 }
 
 .top-menu a:hover {
-  color: #4cbbdb !important;
+  color: #74769a !important;
 }
 
 .top-menu-inverse a {
-  color: #cccccc !important;
+  color: #8687ef !important
 }
 
 .top-menu-primary a {
@@ -2223,7 +2223,7 @@ table.shopping-cart > thead > tr > th, table > thead > tr > td {
 }
 
 .top-menu-inverse p {
-  color: #cccccc !important;
+  color: #fcf4d7 !important
 }
 
 .top-menu-primary p {
@@ -2341,7 +2341,7 @@ table.shopping-cart > thead > tr > th, table > thead > tr > td {
 
 .navbar-brand > img {
   width: auto;
-  max-height: 20px;
+  max-height: 30px;
 }
 
 .navbar-toggle {
@@ -2373,24 +2373,24 @@ table.shopping-cart > thead > tr > th, table > thead > tr > td {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #4cbbdb;
+  color: #afaeae;
 }
 
 .navbar-default .navbar-nav > li > a:focus {
-  color: #666666 !important;
+  color: #afaeae !important;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-  color: #4cbbdb !important;
+  color: #da232b !important;
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav > .active > a:hover {
-  color: #3e9db8 !important;
+  color: #f7797c !important;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
-  color: #4cbbdb;
+  color: #cccccc;
   background-color: transparent;
 }
 
@@ -2417,7 +2417,7 @@ table.shopping-cart > thead > tr > th, table > thead > tr > td {
 }
 
 .navbar-default .dropdown-menu > li > a:hover {
-  color: #4cbbdb;
+  color: #cccccc;
   background-color: transparent;
 }
 
@@ -2929,7 +2929,7 @@ section {
 
 .feature.block {
   padding: 50px 20px;
-  border: 2px solid #4cbbdb;
+  border: 2px solid #d9262e;
 }
 
 .feature i {
@@ -4009,7 +4009,7 @@ footer .widget-title h4 {
 
 footer .widget-title:after {
   content: "";
-  background: #4cbbdb;
+  background: #d8262d;
   position: absolute;
   height: 2px;
   width: 30px;
@@ -4239,7 +4239,7 @@ footer #newsletter .form-control {
   }
 
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-    color: #4cbbdb;
+    color: #cccccc;
     background-color: transparent;
   }
 
@@ -4249,7 +4249,7 @@ footer #newsletter .form-control {
   }
 
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
-    color: #4cbbdb;
+    color: #cccccc;
     background-color: transparent;
   }
 
